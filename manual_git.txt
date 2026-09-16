@@ -1,0 +1,24 @@
+=========================================
+ MANUAL BÁSICO DE GIT - RASPBERRY PI
+=========================================
+
+--- CONFIGURACIÓN INICIAL (Solo se hace una vez por proyecto) ---
+1. Entrar a la carpeta del proyecto: cd ~/mi-proyecto
+2. Inicializar Git en la carpeta: git init
+3. Conectar con GitHub (copia la URL SSH de tu repo):
+   git remote add origin git@github.com:TU_USUARIO/tu-repo.git
+
+--- CICLO DIARIO DE TRABAJO (Cada vez que programas) ---
+1. Bajar los últimos cambios de GitHub (opcional, pero recomendado): git pull
+2. Ver qué archivos has modificado: git status
+3. Preparar todos los cambios para guardar: git add .
+4. Guardar una "foto" de tu código con un mensaje: 
+   git commit -m "Explico brevemente qué cambié hoy"
+5. Subir los cambios a GitHub: git push
+
+--- COMANDOS DE AYUDA ---
+- Ver a dónde está conectado tu proyecto: git remote -v
+- Ver el historial de todas tus "fotos" (commits): git log
+- Ver diferencias exactas en un archivo: git diff
+
+=========================================
